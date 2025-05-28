@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>最喜歡的甜點</h1>
+        <input type="radio" name="dessert" value="布丁">布丁
+        <input type="radio" name="dessert" value="小蛋糕">小蛋糕
+        <input type="radio" name="dessert" value="冰淇淋">冰淇淋
+        <input type="radio" name="dessert" value="果凍">果凍
+        <br>
+        <input type="submit" onclick="shadowResult()">
+        <input type="reset">
+    </form>
+    <script>
+        function shadowResult(){
+            var reset='';
+            var dessert=document.detElementsByName('dessert');
+            for (var i=0;i<dessert.length; i++){
+                if(dessert[i].checked){
+                    result=dessert[i].value;
+                    break;
+                }
+            }
+            window.alert(result)
+        }
+    </script>
+</body>
+</html>

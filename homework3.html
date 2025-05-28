@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            text-align: center;
+        }
+        img{
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>花卉介紹</h1>
+        <button onclick="change();">繡球花</button>
+        <button onclick="changetoexps();">文心蘭</button>
+    </div>
+    <br/>
+    <div id="about" style="display: none;">
+        2024繡球花季到啦！
+        每年5月至6月初夏季節，粉藍、粉紫、粉紅等各色錦簇花團，<br>
+        從陽明山竹子湖、新北萬里高家花田、雪霸休閒農場、武陵農場、<br>
+        明池森林遊樂區等，精選全台超過10處觀賞繡球花的推薦景點，賞花之餘，<br>
+        也一起解密繡球花冷知識！<br><br>
+        <img src="1.jfif" width="300" height="250" alt="繡球花">
+    </div>
+    <div id="exps" style="display: none;">
+        文心蘭，取其優雅文質玲瓏心，又可意會又可言傳，<br>
+        故在本省自從最早有「文心蘭」的稱呼出現後，便沿pic2用成習，<br>
+        也因其花朵頗似穿著膨鬆舞裙、迎風招展婆娑起舞的女郎，而有人稱為「跳舞蘭」，<br>
+        在切花和盆花市場上都佔有很重要的一席之地。<br><br>
+        <img src="2.jpg" width="300" height="250
+        " alt="文心蘭">
+    </div>
+    <script>
+        function change(){
+            //先取得
+            let aboutDiv=document.querySelector("#about");
+            let expsDiv=document.querySelector("#exps")
+            //操作 
+            aboutDiv.style.display="block";
+            aboutDiv.style.radius="10px";
+            expsDiv.style.display="none";
+        }
+        function changetoexps(){
+            //先取得
+            let aboutDiv=document.querySelector("#about");
+            let expsDiv=document.querySelector("#exps")
+            //操作
+            aboutDiv.style.display="none";
+            expsDiv.style.display="block";
+        }
+    </script>
+</body>
+</html>
